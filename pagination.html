@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <title>Pagination Component</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ------------------------ */
+    /* GENERAL STYLES */
+    /* ------------------------ */
+    body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+    }
+
+    .pagination{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .pages{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .pag:link,
+    .pag:visited{
+        font-size: 18px;
+        color: #343a40;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+    }
+
+    .pag:hover,
+    .pag:active{
+        background-color: #087f5b;
+        color: white;
+    }
+
+    .pages .selected{
+        background-color: #087f5b;
+        color: white;
+    }
+
+
+    .btn-icon{
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+
+    }
+
+    .btn {
+        background: white;
+        border: 1px solid #087f5b;
+        height: 48px;
+        width: 48px;
+    
+
+        border-radius: 50%;
+
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn:hover{
+        background-color: #087f5b;
+    }
+
+    .btn:hover .btn-icon{
+        stroke: white;
+    }
+
+    .dots{
+        color: #868686;
+    }
+
+
+
+
+</style>
+
+<body>
+
+
+
+    <div class="pagination">
+
+    
+        <button class="btn btn--left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+    </button>
+    
+    <div class="pages">
+        <a href="#" class="pag">1</p>
+        <a href="#" class="pag">2</a>
+        <a href="#" class="pag selected">3</a>
+        <a href="#" class="pag">4</a>
+        <a href="#" class="pag">5</a>
+        <a href="#" class="pag">6</a>
+        <span class="dots">...</span>
+        <a href="#" class="pag">23</a>
+    </div>
+    
+    <button class="btn btn--right">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+    </svg>
+</button>
+
+</div>
+
+</body>
+
+</html>
