@@ -6,53 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ominifood Hero Section</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
-      rel="stylesheet"/>
-    
-      <style>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
 
-        *{
+    <style>
+        * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
 
-        html{
+        html {
             font-family: 'Rubik', sans-serif;
             color: #444;
         }
 
-        .container{
+        .container {
             margin: 0 auto;
             width: 1200px;
         }
 
-        header{
-            background-color: red;
+
+        .header-container {
+            width: 1200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            /* If want the text to be centered*/
+            /* text-align: center; */
+        }
+
+        .header-container-content {
+            width: 50%;
+
+        }
+
+        header {
             height: 100vh;
+            position: relative;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(100, 100, 100, 0.6)),
+                url(hero.jpg);
+            background-size: cover;
+
+            color: white;
         }
 
         nav {
             font-size: 20px;
             font-weight: 700;
+            padding-top: 32px;
             display: flex;
             justify-content: space-between;
-            background-color: green;
         }
 
-        h1{
+        h1 {
             font-size: 52px;
             margin-bottom: 32px;
         }
 
-        p{
+        p {
             font-size: 20px;
             line-height: 1.6;
+            margin-bottom: 48px;
         }
 
         .btn:link,
-        .btn:visited{
+        .btn:visited {
             font-size: 20px;
             font-weight: 600;
             background-color: #e67e22;
@@ -63,18 +84,17 @@
             border-radius: 9px;
         }
 
-        h2{
+        h2 {
             font-size: 44px;
             margin-bottom: 48px;
         }
 
-        section{
+        section {
             padding: 96px 0;
             background-color: #f7f7f7;
 
         }
-
-      </style>
+    </style>
 
 </head>
 
@@ -85,14 +105,16 @@
             <div>NAVIGATION</div>
         </nav>
 
-        <div class="container">
-            <h1> A health meal delivered to your door, every single day</h1>
-            <p>
-                The smart 365-days-per-year food subscription 
-                that will make you eat heathy again. Tailored to your
-                personaç tastes and nutritional needs
-            </p>
-            <a href="#" class="btn">Start eating well</a>
+        <div class="header-container">
+            <div class="header-container-content">
+                <h1> A health meal delivered to your door, every single day</h1>
+                <p>
+                    The smart 365-days-per-year food subscription
+                    that will make you eat heathy again. Tailored to your
+                    personal tastes and nutritional needs
+                </p>
+                <a href="#" class="btn">Start eating well</a>
+            </div>
         </div>
 
     </header>
@@ -101,7 +123,9 @@
         <div class="container">
             <h2>Some random heading</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aut velit aspernatur officiis architecto magni amet est, explicabo doloribus exercitationem soluta modi expedita cum aliquid quis dicta saepe! Veniam, culpa?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aut velit aspernatur officiis
+                architecto magni amet est, explicabo doloribus exercitationem soluta modi expedita cum aliquid quis
+                dicta saepe! Veniam, culpa?
             </p>
         </div>
     </section>
